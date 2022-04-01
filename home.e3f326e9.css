@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Dx-Sitrus";
+  src: url("DxSitrus-Expanded.452a7e9c.otf") format("opentype");
+}
+body {
+  font-weight: 300;
+  height: 100vh;
+  background-color: #f2eeee;
+}
+body::before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(noise.0ae8f5d7.png);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.6;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  pointer-events: none;
+}
+
+/* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+.page {
+  overflow: hidden;
+  width: 100%;
+  font-size: 0.5208333333vw;
+}
+
+.txt__title {
+  position: absolute;
+  top: 50%;
+  font-family: "Dx-Sitrus";
+  font-size: 14.5vw;
+  color: whitesmoke;
+  mix-blend-mode: difference;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  width: 100%;
+  height: 22.5vh;
+  z-index: 2;
+}
+@media (max-width: 1024px) {
+  .txt__title {
+    font-size: 17.5vw;
+    height: 9.7vh;
+  }
+}
+@media (max-width: 766px) {
+  .txt__title {
+    font-size: 20.5vw;
+    height: 8.3vh;
+  }
+}
+
+.h1 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  /* avoid pointer events on canvas */
+  pointer-events: none;
+}
+
+.showcase-curtain {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 550px;
+  height: 450px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 290px;
+  z-index: 2;
+}
+@media (max-width: 1024px) {
+  .showcase-curtain {
+    max-width: 450px;
+    max-height: 350px;
+  }
+}
+@media (max-width: 766px) {
+  .showcase-curtain {
+    max-width: 280px;
+    max-height: 230px;
+  }
+}
+
+.showcase-curtain img {
+  display: none;
+}
+
+.websites-examples-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.website-example-item {
+  flex-basis: 70%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.website-example-cover {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding-bottom: 56.833%;
+}
+@media (max-width: 766px) {
+  .website-example-cover {
+    position: fixed;
+  }
+}
+
+.website-example-cover img {
+  opacity: 0;
+}
+
+.website-example-item {
+  flex-basis: 70%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/*** handling errors ***/
+.no-curtains .website-example-cover img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.no-curtains .showcase-curtain img {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  body .desktop {
+    display: none;
+  }
+}
+@media (max-width: 766px) {
+  body .desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 1919px) {
+  body .mobile {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  body .mobile {
+    display: block;
+  }
+}
+@media (max-width: 766px) {
+  body .mobile {
+    display: block;
+  }
+}

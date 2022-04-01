@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Dx-Sitrus";
+  src: url("DxSitrus-Expanded.452a7e9c.otf") format("opentype");
+}
+body {
+  background-color: #000002;
+}
+body::before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(noise.0ae8f5d7.png);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 1.8;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  pointer-events: none;
+}
+
+/* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+section {
+  min-height: 100vh;
+}
+
+.li .btn-line-hover {
+  color: whitesmoke;
+}
+
+.o-container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 95rem;
+}
+
+.o-title {
+  perspective: 600px;
+  -webkit-perspective: 600px;
+}
+
+.o-title_line {
+  display: block;
+  opacity: 0;
+  /* transform-origin: center top; */
+  transform-style: preserve-3d;
+  transform: translateY(100%) rotateX(-80deg);
+  transition: opacity 2.75s cubic-bezier(0.215, 0.61, 0.355, 1), transform 2.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  text-align: center;
+}
+
+.o-title.is-inview .o-title_line {
+  transform: none;
+  opacity: 1;
+}
+
+.o-title.is-inview .o-title_line:first-child {
+  transition-delay: 0.6s;
+  margin-bottom: 0px;
+}
+
+.o-title.is-inview .o-title_line:nth-child(2) {
+  transition-delay: 0.5s;
+  margin-bottom: 0px;
+}
+
+.o-title.is-inview .o-title_line:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.o-title.is-inview .o-title_line:nth-child(4) {
+  transition-delay: 0.7s;
+}
+
+.o-title_line span {
+  font-family: "Dx-Sitrus";
+  display: inline-block;
+  min-width: 0.05em;
+  font-size: 5vw;
+  font-weight: bold;
+  color: whitesmoke;
+}
+@media (max-width: 1024px) {
+  .o-title_line span {
+    font-size: 4.5vw;
+  }
+}
+@media (max-width: 766px) {
+  .o-title_line span {
+    font-size: 9vw;
+    margin-top: 5vw;
+    line-height: 0.5;
+  }
+}
+
+.s_img {
+  position: relative;
+  overflow: hidden;
+  max-height: 600px;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1024px) {
+  .s_img {
+    max-width: 700px;
+  }
+}
+@media (max-width: 766px) {
+  .s_img {
+    max-height: 400px;
+    max-width: 350px;
+    text-align: center;
+  }
+}
+
+.vertical__img {
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1024px) {
+  .vertical__img {
+    max-width: 700px;
+    max-height: 939px;
+    text-align: center;
+  }
+}
+@media (max-width: 766px) {
+  .vertical__img {
+    max-height: 500px;
+    max-width: 350px;
+    text-align: center;
+  }
+}
+
+.wrap, .wrap_2, .wrap_3, .wrap_4, .wrap_5, .wrap_6, .wrap_7, .wrap_8, .wrap_9, .wrap_10, .wrap_11, .wrap_12 {
+  width: 100%;
+  background-size: cover;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.content-inner {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.zone {
+  opacity: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.txt__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 6vw;
+  text-align: center;
+  margin-top: 30px;
+  color: whitesmoke;
+}
+@media (max-width: 1024px) {
+  .txt__title {
+    text-align: center;
+    font-size: 4vw;
+  }
+}
+@media (max-width: 766px) {
+  .txt__title {
+    font-size: 7vw;
+    text-align: center;
+  }
+}
+
+.txt__paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  text-align: center;
+  color: whitesmoke;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .txt__paragraph {
+    font-size: 2.8vw;
+    text-align: center;
+  }
+}
+@media (max-width: 766px) {
+  .txt__paragraph {
+    font-size: 3.8vw;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+.m-bottom {
+  margin-bottom: 150px;
+}
