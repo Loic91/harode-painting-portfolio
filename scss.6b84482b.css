@@ -4323,11 +4323,6 @@ ul {
   display: inline-block;
   width: 100%;
 }
-@media (max-width: 766px) {
-  .bottom {
-    margin-bottom: 50px;
-  }
-}
 
 .bottom__2 {
   bottom: 0;
