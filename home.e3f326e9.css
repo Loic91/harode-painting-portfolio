@@ -87,6 +87,7 @@ body::before {
   .txt__title {
     font-size: 20.5vw;
     height: 8.3vh;
+    margin-top: -20vw;
   }
 }
 
@@ -127,6 +128,7 @@ body::before {
 }
 @media (max-width: 766px) {
   .showcase-curtain {
+    margin-top: 250px;
     max-width: 280px;
     max-height: 230px;
   }
