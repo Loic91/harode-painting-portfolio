@@ -4302,10 +4302,6 @@ html.has-scroll-dragging {
   }
 }
 
-.li a {
-  color: #3d3c3c;
-}
-
 .data {
   text-align: left;
   padding-top: -20px;
@@ -4336,7 +4332,6 @@ ul {
   display: flex;
   justify-content: center;
   padding: 12px 22px;
-  color: black;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;

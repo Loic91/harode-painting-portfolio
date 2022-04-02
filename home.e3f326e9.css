@@ -64,6 +64,14 @@ body::before {
   font-size: 0.5208333333vw;
 }
 
+.li a {
+  color: #3d3c3c;
+}
+
+.li .btn-line-hover {
+  color: #3d3c3c;
+}
+
 .txt__title {
   position: absolute;
   top: 50%;
@@ -88,7 +96,7 @@ body::before {
   .txt__title {
     font-size: 20.5vw;
     height: 8.3vh;
-    margin-top: -20vw;
+    margin-top: -10vw;
   }
 }
 

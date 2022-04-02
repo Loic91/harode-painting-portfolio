@@ -55,7 +55,11 @@ section {
   min-height: 100vh;
 }
 
-.li .btn-line-hover {
+.li a {
+  color: whitesmoke;
+}
+
+.li .btn {
   color: whitesmoke;
 }
 

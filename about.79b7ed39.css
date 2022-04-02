@@ -62,7 +62,11 @@ main::before {
     transform: translate(-10%, 10%);
   }
 }
-.li .btn-line-hover {
+.li a {
+  color: whitesmoke;
+}
+
+.li .btn {
   color: whitesmoke;
 }
 
