@@ -2,6 +2,10 @@
   font-family: "Dx-Sitrus";
   src: url("DxSitrus-Expanded.452a7e9c.otf") format("opentype");
 }
+html {
+  position: fixed;
+}
+
 body {
   font-weight: 300;
   height: 100vh;
