@@ -4,7 +4,11 @@
 }
 body {
   font-weight: 300;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #f2eeee;
 }
 body::before {
