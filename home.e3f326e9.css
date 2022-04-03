@@ -81,7 +81,7 @@ body::before {
   top: 50%;
   font-family: "Dx-Sitrus";
   font-size: 14.5vw;
-  color: whitesmoke;
+  color: #969696;
   mix-blend-mode: difference;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -94,13 +94,14 @@ body::before {
   .txt__title {
     font-size: 17.5vw;
     height: 9.7vh;
+    top: 45%;
   }
 }
 @media (max-width: 766px) {
   .txt__title {
     font-size: 20.5vw;
     height: 8.3vh;
-    margin-top: -10vw;
+    top: 45%;
   }
 }
 
@@ -137,6 +138,7 @@ body::before {
   .showcase-curtain {
     max-width: 450px;
     max-height: 350px;
+    margin-top: 50%;
   }
 }
 @media (max-width: 766px) {
@@ -199,7 +201,7 @@ body::before {
   display: block;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   body .desktop {
     display: none;
   }
@@ -215,7 +217,7 @@ body::before {
     display: none;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   body .mobile {
     display: block;
   }
