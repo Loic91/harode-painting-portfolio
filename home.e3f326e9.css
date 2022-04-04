@@ -150,7 +150,7 @@ body::before {
   .showcase-curtain {
     width: 650px;
     height: 500px;
-    margin-top: 15%;
+    margin-top: 20%;
   }
 }
 @media (max-width: 1919px) {
