@@ -63,6 +63,10 @@ section {
   color: whitesmoke;
 }
 
+.li .txt_folio {
+  cursor: default;
+}
+
 .o-container {
   margin-right: auto;
   margin-left: auto;
