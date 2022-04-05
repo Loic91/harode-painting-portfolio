@@ -327,7 +327,7 @@ section {
 }
 @media (max-width: 766px) {
   .txt__paragraph {
-    font-size: 3.3vw;
+    font-size: 3.9vw;
     line-height: 0.9;
     max-width: 350px;
   }
