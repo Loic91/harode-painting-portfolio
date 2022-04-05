@@ -304,7 +304,8 @@ section {
 .txt__paragraph {
   font-family: "Roboto", sans-serif;
   color: whitesmoke;
-  line-height: 0.7;
+  line-height: 0.9;
+  font-size: 3.3vw;
 }
 @media (max-width: 2569px) {
   .txt__paragraph {
