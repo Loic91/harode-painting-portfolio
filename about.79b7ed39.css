@@ -142,16 +142,15 @@ section {
 }
 @media (max-width: 1024px) {
   .bloc__txt {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     max-width: 500px;
   }
 }
 @media (max-width: 766px) {
   .bloc__txt {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     max-width: 350px;
+    margin-top: 30px;
   }
 }
 
@@ -179,8 +178,7 @@ section {
 }
 @media (max-width: 766px) {
   .bloc__txt_2 {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     max-width: 350px;
     margin-top: -250px;
   }
@@ -328,7 +326,7 @@ section {
 }
 @media (max-width: 766px) {
   .txt__paragraph {
-    font-size: 3.2vw;
+    font-size: 3.3vw;
     line-height: 0.9;
   }
 }
